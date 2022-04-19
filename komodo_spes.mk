@@ -16,7 +16,7 @@ $(call inherit-product, vendor/komodo/config/common.mk)
 
 # Komodo Stuff
 KOMODO_OFFICIAL := true
-KOMODO_GAPPS_TYPE := nogapps
+KOMODO_GAPPS_TYPE := gapps
 KOMODO_VARIANT := RELEASE
 
 # Product Specifics
