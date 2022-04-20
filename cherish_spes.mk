@@ -14,7 +14,6 @@ $(call inherit-product, device/xiaomi/spes/device.mk)
 # Inherit some common KomodoOS stuff.
 $(call inherit-product, vendor/cherish/config/common.mk)
 
-
 # Product Specifics
 PRODUCT_NAME := cherish_spes
 PRODUCT_DEVICE := spes
@@ -23,6 +22,7 @@ PRODUCT_MODEL := Redmi Note 11
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+WITH_GMS := true
 
 # Some Build Flags
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -32,7 +32,6 @@ TARGET_USES_AOSP_CHARGER := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ARCORE := false
-diff --git a/komodo_spes.mk b/komodo_spes.mk
 
 # Add CherishOS Maintainer name
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
