@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
 # Inherit some common KomodoOS stuff.
-$(call inherit-product, vendor/komodo/config/common.mk)
+$(call inherit-product, vendor/cherish/config/common.mk)
 
 
 # Product Specifics
@@ -33,3 +33,7 @@ TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_STOCK_ARCORE := false
 diff --git a/komodo_spes.mk b/komodo_spes.mk
+
+# Add CherishOS Maintainer name
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer="AnhNotAnh"
