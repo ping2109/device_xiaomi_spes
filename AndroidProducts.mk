@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/komodo_spes.mk
+    $(LOCAL_DIR)/cherish_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    komodo_spes-user \
-    komodo_spes-userdebug \
-    komodo_spes-eng
+    cherish_spes-user \
+    cherish_spes-userdebug \
+    cherish_spes-eng
